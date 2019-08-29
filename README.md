@@ -24,8 +24,8 @@ Se pueden crear de dos maneras:
    `let expresiónLiteral = /abc/`
 2. Constructor
    `let expresionConstructor = new RegExp("abc")`
+Ejemplos en regexp.js y [RegexOne](https://regexone.com/lesson/introduction_abcs)
 
-##Clase 2
 **Banderas**
 
 | letra | descripción                                 |
@@ -33,7 +33,9 @@ Se pueden crear de dos maneras:
 | g     | Búsqueda global                             |
 | i     | No diferencia entre mayúsculas y minúsculas |
 | m     | Búsqueda en multilínea                      |
-
+##Clase 2
+Ejemplos en /katas y /freeCodeCamp
 ##Recursos
 [Expresiones Regulares - MDN
 ](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions)
+[Programación guiado por pruebas - TDD](https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas)

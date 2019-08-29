@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
-const hello = '   Hello, World!  ';
-const wsRegex = /\S(.+)\S/g;
-const result = hello.match(wsRegex); // Change this line
+
+const username = 'JackOfAllTrades';
+const userCheck = /(?=[a-z]{2,})/i; // Change this line
+const result = userCheck.test(username);
+module.exports = userCheck;
