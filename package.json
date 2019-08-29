@@ -1,0 +1,16 @@
+{
+  "name": "coding-classes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Carlos Marchena <sprintwithcarlos@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  }
+}
