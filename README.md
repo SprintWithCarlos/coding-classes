@@ -35,6 +35,8 @@ Ejemplos en regexp.js y [RegexOne](https://regexone.com/lesson/introduction_abcs
 | m     | Búsqueda en multilínea                      |
 ##Clase 2
 Ejemplos en /katas y /freeCodeCamp
+##Clase 3 Introducción
+##Clase 4 Git
 ##Recursos
 [Expresiones Regulares - MDN
 ](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions)
