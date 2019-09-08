@@ -37,7 +37,8 @@ Ejemplos en regexp.js y [RegexOne](https://regexone.com/lesson/introduction_abcs
 Ejemplos en /katas y /freeCodeCamp
 ##Clase 3 Introducción
 ##Clase 4a Git 1
-##Clase 4b Git 2
+
+
 ##Recursos
 [Expresiones Regulares - MDN
 ](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions)
