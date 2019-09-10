@@ -1,5 +1,5 @@
 // EJERCICIOS QUE NECESITO QUE REVISEMOS JUNTOS.
-//CIERTAS FORMAS DE COMO ESTAN HECHOS ME GENERAN DUDAS
+// CIERTAS FORMAS DE COMO ESTAN HECHOS ME GENERAN DUDAS
 
 
 
@@ -67,29 +67,27 @@ const inventors = [
         justify-content: center;
         align-items: center;
       }
-  
+
       .panel > *:first-child { transform: translateY(-100%); }
       .panel.open-active > *:first-child { transform: translateY(0); }
       .panel > *:last-child { transform: translateY(100%); }
       .panel.open-active > *:last-child { transform: translateY(0); }
-  
+
       const panels = document.querySelectorAll('.panel');
 
       function toggleOpen() {
         console.log('Hello');
         this.classList.toggle('open');
       }
-  
+
       function toggleActive(e) {
         console.log(e.propertyName);
         if (e.propertyName.includes('flex')) {
           this.classList.toggle('open-active');
         }
       }
-  
+
       panels.forEach(panel => panel.addEventListener('click', toggleOpen));
       panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));*/
 
-
-
-
+*/
