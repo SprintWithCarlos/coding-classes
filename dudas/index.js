@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-expressions */
 // EJERCICIOS QUE NECESITO QUE REVISEMOS JUNTOS.
 // CIERTAS FORMAS DE COMO ESTAN HECHOS ME GENERAN DUDAS
 
-// ARRAY CARDIO DAY 1
 
 const inventors = [
   {
@@ -42,7 +42,6 @@ const inventors = [
   },
 ];
 
-const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
 /* DUDA */
 
@@ -50,8 +49,7 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 // 3. Sort the inventors by birthdate, oldest to youngest
 
 const ordered = inventors.sort((firstInventor, secondInventor) => {
-  firstInventor;
-  secondInventor;
+  inventors;
   if (firstInventor.year > secondInventor.year) {
     return 1;
   }
@@ -95,80 +93,3 @@ const oldest = inventors.sort((firstInventor, secondInventor) => {
 });
 oldest;
 console.table(oldest);
-
-const data = [
-  'car',
-  'car',
-  'truck',
-  'truck',
-  'bike',
-  'walk',
-  'car',
-  'van',
-  'bike',
-  'walk',
-  'car',
-  'van',
-  'car',
-  'truck',
-  'pogostick',
-];
-const obj1 = {};
-const item = 'truck';
-obj1[item] = 1;
-obj1;
-
-const transportation = data.reduce((obj, item) => {
-  if (!obj[item]) {
-    obj[item] = 0;
-  }
-  obj[item]++;
-  return obj;
-}, {});
-console.log(transportation);
-
-// 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
-// const category = document.querySelector('.mw-category');
-// const links = Array.from(category.querySelectorAll('a'));
-// const de = links
-//             .map(link => link.textContent)
-//             .filter(streetName => streetName.includes('de'));
-
-//    FLEX PANEL IMG GALLERY
-
-/* Flex Items */
-/* .panel > * {
-        margin: 0;
-        width: 100%;
-        transition: transform 0.5s;
-        flex: 1 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .panel > *:first-child { transform: translateY(-100%); }
-      .panel.open-active > *:first-child { transform: translateY(0); }
-      .panel > *:last-child { transform: translateY(100%); }
-      .panel.open-active > *:last-child { transform: translateY(0); }
-
-      const panels = document.querySelectorAll('.panel');
-
-      function toggleOpen() {
-        console.log('Hello');
-        this.classList.toggle('open');
-      }
-
-      function toggleActive(e) {
-        console.log(e.propertyName);
-        if (e.propertyName.includes('flex')) {
-          this.classList.toggle('open-active');
-        }
-      }
-
-      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-      panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-
-*/
