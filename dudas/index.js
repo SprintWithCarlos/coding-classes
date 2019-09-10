@@ -1,7 +1,7 @@
 // EJERCICIOS QUE NECESITO QUE REVISEMOS JUNTOS.
 //CIERTAS FORMAS DE COMO ESTAN HECHOS ME GENERAN DUDAS
 
-ARRAY CARDIO DAY 1
+
 
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -20,21 +20,22 @@ const inventors = [
 
   const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
-  /*DUDA*/
+ 
 
    Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
      const ordered = inventors.sort(function(a, b) {
-       if(a.year > b.year) {
+     inventors   
+      if(a.year > b.year) {
         return 1;
        } else {
          return -1;
        }
     });
 
-    const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-    console.table(ordered);
+    const ordered1 = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+    console.table(ordered1);
 
 
     // 5. Sort the inventors by years lived
@@ -54,9 +55,9 @@ const inventors = [
     //             .map(link => link.textContent)
     //             .filter(streetName => streetName.includes('de'));
 
-    FLEX PANEL IMG GALLERY
+    
 
-    /* Flex Items */
+    /* Flex Items 
     .panel > * {
         margin: 0;
         width: 100%;
@@ -87,7 +88,7 @@ const inventors = [
       }
   
       panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-      panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+      panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));*/
 
 
 
