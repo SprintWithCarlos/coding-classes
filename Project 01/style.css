@@ -1,0 +1,40 @@
+body, figure{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 5px 20px;
+}
+img{
+    max-width: 100%;
+}
+#grid{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    
+@media screen and (min-width: 321px){
+    .left, .right{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+      
+    }
+   
+    .right>figure{
+        order: 2
+    }
+    .right>p{
+        order: 1
+    }
+    figure{
+    padding: 0 2rem;
+}
+ 
+
+}
