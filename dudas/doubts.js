@@ -6,6 +6,8 @@ digits in num until you reach a single digit.
 For example: if num is 2718 then your program should
 return 2 because 2 + 7 + 1 + 8 = 18 and 1 + 8 = 9 and
 you stop at 9. */
+// Recursión
+
 function AdditivePersistence(num) {
   const arr = num.toString().split('');
   arr;
@@ -14,7 +16,10 @@ function AdditivePersistence(num) {
     added;
     for (let i = 0; i < arr.length; i++) {
       added += parseInt(arr[i]);
+      console.log(arr[i]);
+      added;
     }
+    console.log(AdditivePersistence(added));
     return 1 + AdditivePersistence(added);
   }
 
