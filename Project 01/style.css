@@ -9,12 +9,11 @@ body, figure{
     text-align: center;
     background-color: red;
     padding-bottom:9.2px;
-    
 }
 #header p{
-    font-size:1.5em;
-    padding:1.9px;
-}
+font-size:1.5em;
+padding:1.9px;
+}    
 .col2{
     margin-left:28.3em;
     margin-top:0.4em;
@@ -37,7 +36,6 @@ body, figure{
    color:white;
    width:25%;
    margin-left:34em;
-   
 }
 .contenedor-publicaciones{
     background-color:grey;
@@ -53,9 +51,9 @@ body, figure{
     margin-left:34em;
     color:black;
 }
-p{
+/*p{
     padding: 5px 20px;
-} 
+}*/ 
 /** Iconos Nosotros **/
   .iconos-nosotros{
     display:flex;
@@ -124,6 +122,7 @@ width:50%;
 .laberinto{
     width:50%;
 }
+    
 @media screen and (min-width: 321px){
     .boton-blanco{
         margin-left:3em;
@@ -132,9 +131,6 @@ width:50%;
         margin-left:3em;
         width:75%;
     }
-}
-    
-@media screen and (min-width: 321px){
     .left, .right{
         display: flex;
         align-items: center;
