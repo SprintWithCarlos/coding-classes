@@ -1,13 +1,115 @@
 body, figure{
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+#header{
+    display:flex;
+    height:74px;
+    text-align: center;
+    background-color: red;
+    padding-bottom:9.2px;
+    
+}
+#header p{
+    font-size:1.5em;
+    padding:1.9px;
+}
+.col2{
+    margin-left:28.3em;
+    margin-top:0.4em;
+}
+.col3{
+      margin-top:1.9em;
+      margin-left:27.3em;
+
+}
+.navegacion{
+    display:flex;
+    margin-left:2.1em;
+    margin-top:1.9em;
+}
+.section-container{
+    background-color: black;
+    height:689px;
+}
+.section-container p{
+   color:white;
+   width:25%;
+   margin-left:34em;
+   
+}
+.contenedor-publicaciones{
+    background-color:grey;
+    height:19em;
+    padding-top:0.1em;
+}
+.contenedor-publicaciones h3{
+    text-align:center;
+   
+}
+.contenedor-publicaciones p{
+    width:25%;
+    margin-left:34em;
+    color:black;
 }
 p{
     padding: 5px 20px;
+} 
+/** Iconos Nosotros **/
+  .iconos-nosotros{
+    display:flex;
 }
-img{
-    max-width: 100%;
+.boton-publicacion1{
+    margin-left:41em;
+    width:8em;
+    height:2.6em;
+    background-color: black;
 }
+.boton-publicacion2{
+    margin-left:6.8em;
+    width:8em;
+    height:2.6em;
+    background-color: black;
+}
+.boton-publicacion3{
+    margin-left:6.8em;
+    width:8em;
+    height:2.6em;
+    background-color: black;
+}
+.boton-publicacion4{
+    margin-left:6.8em;
+    width:8em;
+    height:2.6em;
+    background-color: black;
+}
+
+/** Botones **/
+.boton{
+    background-color:white;
+    color:black;
+    border-radius:1em;
+    text-align:center;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border:none;
+    margin-bottom: 0px;
+}
+.fw-300{
+    font-weight:300;
+    color:white;
+    
+}
+.centrar-texto{
+    text-align:center;
+}
+.formulario__boton{
+    float:right;
+    color:white;
+    background-color: black;
+}
+
 #grid{
     display: flex;
     margin: 0 auto;
@@ -15,7 +117,22 @@ img{
     align-items: center;
     flex-wrap: wrap;
     }
-
+/**Imagenes **/
+.boton{
+width:50%;
+}
+.laberinto{
+    width:50%;
+}
+@media screen and (min-width: 321px){
+    .boton-blanco{
+        margin-left:3em;
+    }
+    .section-container p{
+        margin-left:3em;
+        width:75%;
+    }
+}
     
 @media screen and (min-width: 321px){
     .left, .right{
@@ -27,10 +144,10 @@ img{
     }
    
     .right>figure{
-        order: 2
+        order: 2;
     }
     .right>p{
-        order: 1
+        order: 1;
     }
     figure{
     padding: 0 2rem;
