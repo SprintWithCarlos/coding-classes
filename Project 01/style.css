@@ -16,7 +16,6 @@ body, figure{
 }   
 .section-container{
     background-color: black;
-    height:689px;
     padding-top:1.1em;
     border:1px solid black;
 }
@@ -69,7 +68,14 @@ body, figure{
     align-items: center;
     flex-wrap: wrap;
     }
-/**Imagenes **/
+img{
+    width:200px;
+    background-color:black;
+    padding:2em;
+    height:200px;
+    object-fit: fill;
+    object-position: center center;
+}
 
 /*.laberinto{
     width:75%;
@@ -137,8 +143,12 @@ body, figure{
     .boton-blanco{
         margin-left:2.5em;
     }
-    #main-picture{
-        width:19px;
+   #main-picture{
+   
+    display:flex;
+    max-width:90%;
+    margin:0 auto;
+    margin-top:30px;
     }
     
     .contenedor-publicaciones h3{
