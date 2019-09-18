@@ -1,0 +1,53 @@
+<!-- TO-DO
+- Como usuario quiero guardar katas que quiero hacer para consultarlos posteriormente. 
+- De los katas quiero que se guarde la fecha en los que los añadí, el nombre, el link y si los he completado o están pendientes.
+- Además quiero eliminarlos  
+- quiero modificarlos  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seguidor de Katas</title>
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <main>
+        <h1>Seguidor de Katas</h1>
+        <section>
+            <form action="/" method="">
+                <input type="text" placeholder="Fecha">
+                <input type="text" id="name" placeholder="Nombre">
+                <input type="text" id="link" placeholder="Link">
+                <input type="text" placeholder="Estado">
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+            <table>
+                <thead>
+                    <td>Fecha</td>
+                    <td>Nombre</td>
+                    <td>Estado</td>
+                </thead>
+            <tr>
+                <td>Martes, 17 de septiembre de 2019 09:12</td>
+                <td><a href="https://www.codewars.com/kata/help-suzuki-complete-his-chores">Help Suzuki complete his chores!</a>
+                </td>
+                
+                <td>Completado</td>
+            </tr>
+            <tr>
+                <td>Martes, 17 de septiembre de 2019 09:27</td>
+                <td><a href="https://www.codewars.com/kata/56ff1667cc08cacf4b00171b">Help Suzuki count his vegetables....
+                    </a>
+                </td>
+                <td id="status" onclick="changeStatus()">Pendiente</td>
+            </tr>
+            </table>
+        </section>
+    </main>
+<script src="script.js"></script>
+    
+</body>
+</html>

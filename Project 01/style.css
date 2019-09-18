@@ -123,31 +123,3 @@ width:50%;
     width:50%;
 }
     
-@media screen and (min-width: 321px){
-    .boton-blanco{
-        margin-left:3em;
-    }
-    .section-container p{
-        margin-left:3em;
-        width:75%;
-    }
-    .left, .right{
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 800px;
-      
-    }
-   
-    .right>figure{
-        order: 2;
-    }
-    .right>p{
-        order: 1;
-    }
-    figure{
-    padding: 0 2rem;
-}
- 
-
-}
