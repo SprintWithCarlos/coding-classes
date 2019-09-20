@@ -77,6 +77,11 @@ img{
     object-position: center center;
     margin-bottom:-6px;
 }
+.caja-padre{
+    border:1px solid black;
+    display:block;
+    
+}
     
 @media screen and (min-width: 321px){
     .navegacion{
@@ -229,7 +234,7 @@ img{
         order: 1;
     }
     .entrada-blog{
-        height:1499px;
+        height:1465px;
         background-color: grey;
     }
     .entrada-blog p{
@@ -239,22 +244,50 @@ img{
         font-family: 'Varela', sans-serif;
         
      }
+     .caja-padre{
+         display:flex;
+     }
+    
      .caja{
          border:1px solid black;
          
      }
-     .blackbox{
+     .blackbox1{
         height:245px;
-         background-color:black;
+        width:397px;
+         background-color:yellow;
+         /*display:flex;*/
+         text-align:center;
+         
          border-radius:0.3em;
         }
+        .blackbox2{
+            height:245px;
+            width:397px;
+             background-color:red;
+             /*display:flex;*/
+             text-align:center;
+             
+             border-radius:0.3em;
+            }
+            .blackbox3{
+                height:245px;
+                width:397px;
+                 background-color:blue;
+                 /*display:flex;*/
+                 text-align:center;
+                
+                 border-radius:0.3em;
+                }
         .caja p{
         font-size:20px;
         text-align:center;
+       
         }
         .small{
             font-size:15px;
             text-align:center;
+            
         }
  .testimonial{
      border:1px solid black;
