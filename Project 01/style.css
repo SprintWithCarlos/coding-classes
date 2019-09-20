@@ -1,7 +1,8 @@
 body, figure{
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
+    /* box-sizing: border-box; */
 }
 @import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
 
@@ -69,12 +70,13 @@ body, figure{
     flex-wrap: wrap;
     }
 img{
-    width:200px;
+    width: 8rem;
     background-color:black;
     padding:2em;
-    height:200px;
+    height: 8rem;
     object-fit: fill;
     object-position: center center;
+    margin-bottom: -6px;
 }
 
 /*.laberinto{
@@ -208,8 +210,8 @@ img{
     }
     .laberinto{
         position:left;
-        width:210px;
-        margin-left:9px;
+        /* width:210px; */
+        /* margin-left:9px; */
     }
     /*.section-container p{
         margin-left:3em;
