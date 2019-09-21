@@ -1,4 +1,4 @@
-const { createKata, readKatas } = require('./script');
+const { createKata, readKatas, deleteKata } = require('./script');
 
 describe('Suite de Test de Seguidor de Katas', () => {
   it.skip('Canary Test', () => {
@@ -9,5 +9,8 @@ describe('Suite de Test de Seguidor de Katas', () => {
   });
   it('Read Katas Array', () => {
     expect(readKatas()).toEqual([{ name: 'Kata1', link: 'Link1', status: false }]);
+  });
+  it('Delete Kata', () => {
+    expect(deleteKata('Kata1')).toEqual([]);
   });
 });

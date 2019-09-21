@@ -22,15 +22,21 @@ class Kata {
   }
 }
 
-const katas = [];
+let katas = [];
 const createKata = (name, link) => {
   const kata = new Kata(name, link);
   katas.push({ ...kata });
   return kata;
 };
 const readKatas = () => katas;
+const deleteKata = (name) => {
+  const changedKatas = katas.filter((kata) => kata.name !== name);
+  katas = changedKatas;
+  return katas;
+};
 
 module.exports = {
   createKata,
   readKatas,
+  deleteKata,
 };
