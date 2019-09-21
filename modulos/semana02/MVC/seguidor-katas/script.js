@@ -1,5 +1,5 @@
-
-class Kata {
+let katas = [];
+module.exports = class Kata {
   constructor(name, link) {
     this.name = name;
     // this.date = new Date(Date.now()).toLocaleDateString('es-ES', {
@@ -20,23 +20,18 @@ class Kata {
     console.log(this.status);
     return this.status;
   }
-}
 
-let katas = [];
-const createKata = (name, link) => {
-  const kata = new Kata(name, link);
-  katas.push({ ...kata });
-  return kata;
-};
-const readKatas = () => katas;
-const deleteKata = (name) => {
-  const changedKatas = katas.filter((kata) => kata.name !== name);
-  katas = changedKatas;
-  return katas;
-};
+  static createKata(name, link) {
+    const kata = new Kata(name, link);
+    katas.push({ ...kata });
+    return kata;
+  }
 
-module.exports = {
-  createKata,
-  readKatas,
-  deleteKata,
+  static readKatas() { return katas; }
+
+  static deleteKata(name) {
+    const changedKatas = katas.filter((kata) => kata.name !== name);
+    katas = changedKatas;
+    return katas;
+  }
 };
