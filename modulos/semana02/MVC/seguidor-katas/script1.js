@@ -1,6 +1,4 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-use-before-define */
-// Book Class: Represents a Book
+
 class Book {
   constructor(title, author, isbn) {
     this.title = title;

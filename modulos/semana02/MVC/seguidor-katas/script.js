@@ -17,7 +17,6 @@ module.exports = class Kata {
 
   static changeStatus() {
     this.status = !this.status;
-    console.log(this.status);
     return this.status;
   }
 
