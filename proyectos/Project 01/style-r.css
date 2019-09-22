@@ -11,9 +11,9 @@ section:nth-child(even){
     background-color: gray
 
 }
-section:nth-child(odd){
+/* section:nth-child(odd){
     background-color: lightgreen
-}
+} */
 nav{
     padding: 1em 0;
 }
@@ -35,6 +35,7 @@ a{
     display: flex;
     flex-direction: column
 }
+
 .rect{
    display: block;
     background-color: black;
@@ -113,5 +114,24 @@ nav ul {
 }
 nav ul li {
     padding: 0 0.3em
+} 
+#hero img{
+    max-width: 800px;
 }
+.rect{
+    display: inline-block;
+}
+.row{
+    display: flex
+}
+#footer .row{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+#footer .block:nth-child(2){
+    justify-content: space-between;
+    width: 70%;
+}
+
 }
