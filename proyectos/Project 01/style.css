@@ -1,12 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
+    /* box-sizing: border-box; */
 }
 @import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
 
 #header{
   padding-top:0.2em;
+  max-width:100%;
+  display:flex;
+  justify-content:center;
   padding-bottom: 0.2em;
     height:274px;
    background-color:white;
@@ -86,25 +90,24 @@ img{
 @media screen and (min-width: 321px){
     .navegacion{
         display:flex;
-        
         margin-left:0.1em;
         margin-top:3em;
     }
     .navegacion a{
-        margin-left:1.9em;
+        /*margin-left:1.9em;*/
         color:black;
         font-size:1.3rem;
         font-family: 'Varela', sans-serif;
     }
 .col2{
-        margin-left:3em;
-        margin-top:0.6em;
+       /*margin-right:10px;
+        margin-top:44px;*/
         font-size:2.6rem;
     }
     .col3{
-        margin-left:7.3em;
+        /*margin-left:7.3em;
          width:180px;
-         height:30px;
+         height:30px;*/
     }
     .formulario__boton{
         text-align: center;
@@ -295,7 +298,7 @@ img{
      height:239px;
      margin:0 auto;
 }
-#cta < p{
+#cta:first-child{
     color:black;
 }
  #footer{
