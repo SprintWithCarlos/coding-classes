@@ -8,6 +8,9 @@ body{
 
 #header{
   padding-top:0.2em;
+  max-width:100%;
+  display:flex;
+  justify-content:center;
   padding-bottom: 0.2em;
     height:274px;
    background-color:white;
@@ -80,8 +83,8 @@ img{
 }
 .caja-padre{
     border:1px solid black;
-    display:block;
-    
+    display:flex;
+   flex-wrap:wrap; 
 }
     
 @media screen and (min-width: 321px){
@@ -91,20 +94,20 @@ img{
         margin-top:3em;
     }
     .navegacion a{
-        margin-left:1.9em;
+        /*margin-left:1.9em;*/
         color:black;
         font-size:1.3rem;
         font-family: 'Varela', sans-serif;
     }
 .col2{
-        margin-left:3em;
-        margin-top:0.6em;
+       /*margin-right:10px;
+        margin-top:44px;*/
         font-size:2.6rem;
     }
     .col3{
-        margin-left:7.3em;
+        /*margin-left:7.3em;
          width:180px;
-         height:30px;
+         height:30px;*/
     }
     .formulario__boton{
         text-align: center;
@@ -235,7 +238,7 @@ img{
         order: 1;
     }
     .entrada-blog{
-        height:1465px;
+        height:699px;
         background-color: grey;
     }
     .entrada-blog p{
@@ -244,9 +247,6 @@ img{
         text-align:center;
         font-family: 'Varela', sans-serif;
         
-     }
-     .caja-padre{
-         display:flex;
      }
     
      .caja{
@@ -292,4 +292,30 @@ img{
         }
  .testimonial{
      border:1px solid black;
- }}
+ }   
+ #cta{
+     border:1px solid black;
+     height:239px;
+     margin:0 auto;
+}
+#cta:first-child{
+    color:black;
+}
+ #footer{
+     display:flex;
+ }
+ .colx{
+     margin-left:5px;
+ }
+
+table{
+    margin-top:23px;
+    margin-left:18px;
+    align-items:center;
+
+}
+    
+
+
+
+
