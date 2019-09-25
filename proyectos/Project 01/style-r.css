@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 1em 0;
+    text-align: center;
+}
+section:nth-child(even){
+    background-color: gray
+
+}
+/* section:nth-child(odd){
+    background-color: lightgreen
+} */
+nav{
+    padding: 1em 0;
+}
+nav ul {
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+#hero img{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -21px;
+}
+.stripe{
+    display: flex;
+    flex-direction: column
+}
+
+.rect{
+   display: block;
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.post{
+    padding: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+}
+#posts .rect{
+   display: block;
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.left{
+    background-color: black;
+}
+
+#features img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    object-position: center center;
+    margin: 5em 0;
+}
+#testimonial img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 50%;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+
+button{
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+#footer ul{
+    margin-bottom: 10px;
+    list-style: none;
+}
+#footer ul li:first-child{
+    font-weight: 600;
+}
+#footer .block:nth-child(2){
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 400px){
+    nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.8em;
+    align-items: center;
+}
+nav ul {
+   
+    display: flex;
+    
+}
+nav ul li {
+    padding: 0 0.3em
+} 
+#hero img{
+    max-width: 800px;
+}
+.rect{
+    display: inline-block;
+}
+.row{
+    display: flex
+}
+#footer .row{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+#footer .block:nth-child(2){
+    justify-content: space-between;
+    width: 70%;
+}
+
+}

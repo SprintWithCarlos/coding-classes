@@ -72,5 +72,7 @@ MVC nos permite entonces tener una plantilla de elementos comunes a los cuales s
 - [EJS](https://ejs.co/)
 - [Pug/Jade](https://pugjs.org/api/getting-started.html)
 - [Handlebars](https://handlebarsjs.com/)
+## Rutas protegidas
+- Autenticación y Autorización 
 
 @ Carlos Marchena - 2019. Todos los derechos reservados
