@@ -9,8 +9,7 @@ body{
 #header{
   padding-top:0.2em;
   max-width:100%;
-  display:flex;
-  justify-content:center;
+ text-align:center;
   padding-bottom: 0.2em;
     height:274px;
    background-color:white;
@@ -36,6 +35,12 @@ body{
     padding: 5px 20px;
 }*/ 
 /** Iconos Nosotros **/
+button{
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
   .iconos-nosotros{
     display:flex;
 }
@@ -90,21 +95,24 @@ img{
 @media screen and (min-width: 321px){
     .navegacion{
         display:flex;
-        margin-left:0.1em;
+        justify-content: center;
+        /*margin-left:0.1em;*/
         margin-top:3em;
+        background-color: red;
     }
     .navegacion a{
         /*margin-left:1.9em;*/
         color:black;
         font-size:1.3rem;
         font-family: 'Varela', sans-serif;
+        position:left;
     }
-.col2{
-       /*margin-right:10px;
-        margin-top:44px;*/
-        font-size:2.6rem;
+    header p{
+        clear:both;
     }
+
     .col3{
+        background-color:black;
         /*margin-left:7.3em;
          width:180px;
          height:30px;*/
