@@ -1,0 +1,32 @@
+<%- include('includes/header.ejs') %>
+<main>
+    <% if (posts.length > 0) { %>
+    <section class="post">
+        <% for (let post of posts) { %>
+        <article class="card">
+            <figure>
+                <img src="<%= post.image %>/1" class="post-preview-image" alt="">
+            </figure>
+            <div class="card-description">
+                <small><%= post.category %></small>
+                <h2><%= post.title %></h2>
+                <div class="user-description">
+                    <figure>
+                        <img class="avatar" src="<%= post.author.avatar %>" alt="">
+                    </figure>
+                    <span>
+                        <p><%= post.author.firstName %> <%= post.author.lastName %></p>
+                    </span>
+                </div>
+                <div class="link"><a href="/posts/<%= post.id %>">Leer más</a></div>
+            </div>
+        </article>
+        <% } %>
+        
+    </section>
+    <% } else { %>
+    <h1>¡Aún no hay artículos publicados!</h1>
+    <% } %>
+</main>
+
+<%- include('includes/footer.ejs') %>
