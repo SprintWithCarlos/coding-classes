@@ -1,0 +1,27 @@
+<%- include('includes/header.ejs') %>
+<main>
+    <section>
+        <figure>
+            <img class="full-width" src="<%= post.image %>/1" alt="">
+        </figure>
+        <div class="post">
+            <h2><%= post.title %></h2>
+            <p><%= post.date %></p>
+            <small><%= post.category %></small>
+            <div class="user-description">
+                <figure>
+                    <img class="avatar" src="<%= post.author.avatar %>" alt="">
+                </figure>
+                <span>
+                    <p><%= post.author.firstName %> <%= post.author.lastName %></p>
+                </span>
+            </div>
+
+            <div class="blog-text">
+                <%= post.body %>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+<%- include('includes/footer.ejs') %>

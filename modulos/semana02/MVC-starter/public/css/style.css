@@ -1,0 +1,59 @@
+body, header, ul,figure{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer{
+    text-align: center;
+    background-color: gray;
+    padding: 1em 0;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    
+}
+nav ul{
+    display: flex;
+   justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+}
+.card{
+    display: flex;
+    border: 1px solid #eaeaea
+}
+.post-preview-image{
+    object-fit: fill;
+    height: 180px;
+    width: 270px;
+    object-position: center center;
+}
+.card-description{
+    padding-left: 1em;
+    padding-top:0.5em;
+
+}
+.user-description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.user-description > *{
+    padding-right: 0.5em;
+}
+.avatar{
+    width: 30px;
+}
+.post{
+    padding: 0 1em;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.full-width{
+    width: 100%;
+}
