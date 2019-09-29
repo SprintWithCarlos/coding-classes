@@ -5,13 +5,14 @@ const fs = require('fs');
 const users = [];
 const posts = [];
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 5; i++) {
   const user = {
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
     avatar: faker.image.avatar(),
     email: faker.internet.email(),
     id: i + 1,
+    title: faker.hacker.noun(),
   };
   users.push(user);
 }

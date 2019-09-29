@@ -1,0 +1,25 @@
+<%- include('includes/header.ejs') %>
+<main>
+    <% if (users.length > 0) { %>
+    <section class="user">
+        <% for (let user of users) { %>
+        <article class="card">
+            <figure>
+                <img src="<%= user.avatar %>"  alt="">
+            </figure>
+            <div class="card-description">
+              
+                <h2><%= user.firstName %> <%= user.lastName %>"</h2>
+                <h3>Title: <%= user.title %> </h3>
+                    
+            </div>
+        </article>
+        <% } %>
+
+    </section>
+    <% } else { %>
+    <h1>¡Aún no hay artículos publicados!</h1>
+    <% } %>
+</main>
+
+<%- include('includes/footer.ejs') %>
