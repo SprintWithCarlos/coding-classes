@@ -10,14 +10,18 @@
             <div class="card-description">
                 <small><%= post.category %></small>
                 <h2><%= post.title %></h2>
+                
+                <a href="/users/<%= post.author.firstName %>-<%= post.author.lastName %>">
+                
                 <div class="user-description">
-                    <figure>
-                        <img class="avatar" src="<%= post.author.avatar %>" alt="">
-                    </figure>
-                    <span>
-                        <p><%= post.author.firstName %> <%= post.author.lastName %></p>
-                    </span>
-                </div>
+                <figure>
+                    <img class="avatar" src="<%= post.author.avatar %>" alt="">
+                </figure>
+                <span>
+                    <p><%= post.author.firstName %> <%= post.author.lastName %></p>
+                </span>
+            </div></a>
+            
                 <div class="link"><a href="/posts/<%= post.id %>">Leer más</a></div>
             </div>
         </article>

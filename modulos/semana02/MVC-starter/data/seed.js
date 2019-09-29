@@ -11,15 +11,18 @@ for (let i = 0; i < 3; i++) {
     lastName: faker.name.lastName(),
     avatar: faker.image.avatar(),
     email: faker.internet.email(),
+    id: i + 1,
   };
   users.push(user);
 }
+
 class User {
   constructor() {
     this.firstName = faker.name.firstName();
     this.lastName = faker.name.lastName();
     this.avatar = faker.image.avatar();
     this.email = faker.internet.email();
+    this.id = faker.random.uuid();
   }
 }
 
