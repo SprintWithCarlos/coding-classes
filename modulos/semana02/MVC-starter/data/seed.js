@@ -12,7 +12,8 @@ for (let i = 0; i < 5; i++) {
     avatar: faker.image.avatar(),
     email: faker.internet.email(),
     id: i + 1,
-    title: faker.hacker.noun(),
+    title: faker.company.bsNoun(),
+    // title: faker.hacker.noun(),
   };
   users.push(user);
 }
