@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+p, a, ul, li, section, article, header, footer{
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    width: 100%;
+}
+#logo{
+    width: 70px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+ul li{
+     list-style-type: none;
+     margin-right: 5px;
+     
+}
+
+#history h2{
+    text-align: center;
+}
+
+.intro{
+    text-align: center;
+}
+.benefits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+   text-align: center;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: fill;
+
+}
+footer{
+    text-align: center
+}
+@media screen and (min-width: 500px){
+    .benefits{
+        flex-direction: row;
+    }
+    .block{
+    width: 47%;
+    padding: 0 20px;
+}
+#history .columns{
+    display: flex;
+}
+}
