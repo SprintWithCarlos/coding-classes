@@ -19,3 +19,13 @@ exports.getAbout = (req, res) => {
 exports.getCategorias = (req, res) => {
   res.render("categorias", { post });
 };
+exports.getUser = (req, res) => {
+  res.render("about", { users });
+};
+exports.getContact = (req, res) => {
+  res.render("contact");
+};
+
+exports.getListAPI = (req, res) => {
+  res.json({ posts });
+};

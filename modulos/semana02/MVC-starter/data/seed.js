@@ -14,12 +14,14 @@ for (let i = 0; i < 7; i++) {
   };
   users.push(user);
 }
+
 class User {
   constructor() {
     this.firstName = faker.name.firstName();
     this.lastName = faker.name.lastName();
     this.avatar = faker.image.avatar();
     this.email = faker.internet.email();
+    this.id = faker.random.uuid();
   }
 }
 
