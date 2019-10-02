@@ -1,8 +1,10 @@
 <%- include('includes/header.ejs') %>
 <main>
     <% if (posts.length > 0) { %>
+        <% console.log(posts[12].category) %>
     <section class="post">
         <% for (let post of posts) { %>
+           
         <article class="card">
             <figure>
                 <img src="<%= post.image %>/1" class="post-preview-image" alt="">
@@ -34,3 +36,4 @@
 </main>
 
 <%- include('includes/footer.ejs') %>
+
