@@ -66,6 +66,7 @@ function twoSum(arr, S) {
       sums.push([arr[i], sumMinusElement]);
     }
     hashTable[arr[i].toString()] = arr[i];
+    console.log(hashTable);
   }
   console.log(sums);
 }
