@@ -10,7 +10,10 @@ for (let i = 0; i < 7; i++) {
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
     avatar: faker.image.avatar(),
-    email: faker.internet.email()
+    email: faker.internet.email(),
+    title: faker.company.bsNoun(),
+    id: i + 1,
+    description: faker.lorem.paragraphs(5)
   };
   users.push(user);
 }

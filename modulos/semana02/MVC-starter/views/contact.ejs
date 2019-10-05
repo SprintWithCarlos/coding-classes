@@ -1,5 +1,13 @@
 <%- include('includes/header.ejs') %>
+<div><%=users[0].email%></div>
+<div><%=users[0].firstName%></div>
 <form>
-    <input type="text"></input>
+  <label for="input-nombre">Nombre:</label>
+  <input type="text" id="input-nombre" />
+  <label for="input-apellidos">Apellidos:</label>
+  <input type="text" id="input-apellidos" />
+  <label for="input-direccion">Dirección:</label>
+  <input type="text" id="input-direccion" />
+  <input type="submit" value="enviar" id="input-direccion" />
 </form>
 <%- include('includes/footer.ejs') %>

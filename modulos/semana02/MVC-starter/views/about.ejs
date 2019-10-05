@@ -3,9 +3,11 @@
   <h1>Quienes Somos</h1>
 
   <% for (let user of users) { %>
-  <p>Nombre:<%= user.firstName%></p>
-  <p>Apellido:<%= user.lastName%></p>
-  <p>Apellido:<%= user.lastName%></p>
+  <img src=" <%= user.avatar %>" />
+  <p><%= user.firstName%> <%= user.lastName%></p>
+  <p>Departamento:<%= user.title%></p>
+  <p><a href="/users/<%= user.id %>">Ver más</a></p>
+  <p><%= user.description%>descripción</p>
   <%}%>
 </main>
 

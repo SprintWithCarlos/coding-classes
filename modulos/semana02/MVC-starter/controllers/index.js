@@ -17,15 +17,16 @@ exports.getAbout = (req, res) => {
   res.render("about", { users });
 };
 exports.getCategorias = (req, res) => {
-  res.render("categorias", { post });
+  res.render("categorias", { posts });
 };
 exports.getUser = (req, res) => {
   res.render("about", { users });
 };
-exports.getContact = (req, res) => {
-  res.render("contact");
-};
 
 exports.getListAPI = (req, res) => {
   res.json({ posts });
+};
+exports.getDetailAbout = (req, res) => {
+  const { id } = req.params;
+  res.render("aboutdetail", { user: users[id - 1] });
 };
