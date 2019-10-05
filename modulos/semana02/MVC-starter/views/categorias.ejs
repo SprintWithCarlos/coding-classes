@@ -1,2 +1,9 @@
 <%- include('includes/header.ejs') %>
-<p>categoria:<%= post.category %></p>
+
+<main>
+  <h1>Categorias</h1>
+  <% for (let post of posts) { %>
+  <p>categoria:<%= post.category %></p>
+
+  <%}%>
+</main>
