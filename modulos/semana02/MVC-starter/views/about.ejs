@@ -1,27 +1,14 @@
 <%- include('includes/header.ejs') %>
 <main>
-    <% if (users.length > 0) { %>
-    <section class="user">
-      <a href="mailto:<%= users[0].email %>"><%= users[0].email %></a>
-        <% for (let user of users) { %>
-      
-        <article class="card">
-            <figure>
-                <img src="<%= user.avatar %>"  alt="">
-            </figure>
-            <div class="card-description">
-              
-                <h2><%= user.firstName %> <%= user.lastName %>"</h2>
-                <h3>Title: <%= user.title %> </h3>
-                    
-            </div>
-        </article>
-        <% } %>
+  <h1>Quienes Somos</h1>
 
-    </section>
-    <% } else { %>
-    <h1>¡Aún no hay artículos publicados!</h1>
-    <% } %>
+  <% for (let user of users) { %>
+  <img src=" <%= user.avatar %>" />
+  <p><%= user.firstName%> <%= user.lastName%></p>
+  <p>Departamento:<%= user.title%></p>
+  <p><a href="/users/<%= user.id %>">Ver más</a></p>
+  <p><%= user.description%>descripción</p>
+  <%}%>
 </main>
 
 <%- include('includes/footer.ejs') %>

@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+<main>
+  <article class="card-detail">
+    <img src=" <%= user.avatar %>" class="post-detail-image" />
+    <div class="publication">
+      <p><%= user.firstName%> <%= user.lastName%></p>
+      <p>Departamento:<%= user.title%></p>
+    </div>
+  </article>
+  <p><a href="/users/<%= user.id %>">Ver más</a></p>
+  <p><%= user.description%>descripción</p>
+
+  <%- include('includes/footer.ejs') %>
+</main>

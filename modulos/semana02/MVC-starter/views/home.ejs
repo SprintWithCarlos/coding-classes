@@ -1,39 +1,36 @@
 <%- include('includes/header.ejs') %>
 <main>
-    <% if (posts.length > 0) { %>
-        <% console.log(posts[12].category) %>
-    <section class="post">
-        <% for (let post of posts) { %>
-           
-        <article class="card">
+  <% if (posts.length > 0) { %>
+  <section class="post">
+    <% for (let post of posts) { %>
+    <article class="card">
+      <figure>
+        <img src="<%= post.image %>/1" class="post-preview-image" alt="" />
+      </figure>
+      <div class="card-description">
+        <small><%= post.category %></small>
+        <h2><%= post.title %></h2>
+        <a href="/users/<%= post.author.id %>"
+          ><div class="user-description">
             <figure>
-                <img src="<%= post.image %>/1" class="post-preview-image" alt="">
+              <img class="avatar" src="<%= post.author.avatar %>" alt="" />
             </figure>
-            <div class="card-description">
-                <small><%= post.category %></small>
-                <h2><%= post.title %></h2>
-                
-                <a href="/users/<%= post.author.firstName %>-<%= post.author.lastName %>">
-                
-                <div class="user-description">
-                <figure>
-                    <img class="avatar" src="<%= post.author.avatar %>" alt="">
-                </figure>
-                <span>
-                    <p><%= post.author.firstName %> <%= post.author.lastName %></p>
-                </span>
-            </div></a>
-            
-                <div class="link"><a href="/posts/<%= post.id %>">Leer más</a></div>
-            </div>
-        </article>
-        <% } %>
-        
-    </section>
-    <% } else { %>
-    <h1>¡Aún no hay artículos publicados!</h1>
+            <span>
+              <p><%= post.author.firstName %> <%= post.author.lastName %></p>
+            </span>
+          </div>
+        </a>
+        <div class="link">
+          <a href="/posts/<%= post.id %>">Leer más</a>
+        </div>
+      </div>
+    </article>
     <% } %>
+  </section>
+  <% } else { %>
+  <h1>¡Aún no hay artículos publicados!</h1>
+  <% } %>
 </main>
 
-<%- include('includes/footer.ejs') %>
-
+<%- include('includes/footer.ejs') %> <<<<<<< HEAD ======= >>>>>>>
+0ed277e691fcbdeee820dd02d70b54424d8babfe
