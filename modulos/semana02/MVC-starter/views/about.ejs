@@ -2,7 +2,9 @@
 <main>
     <% if (users.length > 0) { %>
     <section class="user">
+      <a href="mailto:<%= users[0].email %>"><%= users[0].email %></a>
         <% for (let user of users) { %>
+      
         <article class="card">
             <figure>
                 <img src="<%= user.avatar %>"  alt="">
