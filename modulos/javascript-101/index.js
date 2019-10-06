@@ -1,11 +1,8 @@
-const car = {
-  numberOfDoors: 4,
-  drive() {
-    console.log(`Get in one of the ${this.numberOfDoors} doors, and let's go!`);
-  },
-};
-
-const letsRoll = car.drive;
-
-
-console.log(letsRoll());
+// Ejercicios
+const lenguajes = ['JavaScript', 'Python', 'Java', 'C', 'Golang'];
+lenguajes.forEach((index, item) => {
+  console.log(index, item);
+});
+const languages = [...lenguajes];
+languages
+;
