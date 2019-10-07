@@ -5,9 +5,9 @@
   <% for (let user of users) { %>
   <img src=" <%= user.avatar %>" />
   <p><%= user.firstName%> <%= user.lastName%></p>
-  <p>Departamento:<%= user.title%></p>
-  <p><a href="/users/<%= user.id %>">Ver más</a></p>
-  <p><%= user.description%>descripción</p>
+  <p>Departamento:<%= user.role%></p>
+  <p><a href="/users/<%= user.ID %>">Ver más</a></p>
+  
   <%}%>
 </main>
 
