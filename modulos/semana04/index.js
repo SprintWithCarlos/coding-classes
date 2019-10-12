@@ -1,16 +1,13 @@
-const http = require('http');
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-  console.log(req.url);
-  if (req.url === '/about') {
-    res.write('Hola desde About');
-    res.end();
-  }
-  if (req.url === '/contact') {
-    res.write('Hola desde Contact');
-    res.end();
-  }
+const app = express();
+app.get('/about', (req, res) => {
+  res.send('Hola desde About');
 });
-server.listen(3000, () => {
+app.get('/contact', (req, res) => {
+  res.send('Hola desde Contact');
+});
+app.listen(3000, () => {
   console.log('Escuchando en puerto 3000');
-});
+})
+;
