@@ -1,6 +1,28 @@
 <%- include('includes/header.ejs') %>
-<div><%=users[0].email%></div>
-<div><%=users[0].firstName%></div>
+<div>
+  <h1>
+    Persona de Contacto
+  </h1>
+</div>
+
+<div><h2><%=users[0].firstName%> <%=users[0].lastName%></h2></div>
+<div>
+  <h2>Email: <a href="mailto:<%=users[0].email%>"><%=users[0].email%></a></h2>
+</div>
+<div>
+  <h2>Telefono: <a href="tel:+3460964405473">+3460964405473 </a></h2>
+</div>
+<div>
+  <h2>Donde estamos:</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.767543123102!2d-3.7119366850150377!3d40.41400016373019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422878ea6288b3%3A0x9d817fa502c6a5b5!2sBiblioteca%20Iv%C3%A1n%20de%20Vargas!5e0!3m2!1ses!2ses!4v1570271432469!5m2!1ses!2ses"
+    width="600"
+    height="450"
+    frameborder="0"
+    style="border:0;"
+    allowfullscreen=""
+  ></iframe>
+</div>
 <form>
   <label for="input-nombre">Nombre:</label>
   <input type="text" id="input-nombre" />
