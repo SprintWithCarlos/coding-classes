@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "9e2a3375-b6f4-4447-92b3-856034e82669",
-		"name": "REST API",
+		"name": "REST API SQL",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -229,7 +229,7 @@
 	],
 	"variable": [
 		{
-			"id": "dacbbbfa-bbac-4ad1-905d-e3374db8ee0d",
+			"id": "25d41cfc-ba96-4bfc-b564-3e752f54ba99",
 			"key": "host",
 			"value": "http://localhost:3000/",
 			"type": "string"
