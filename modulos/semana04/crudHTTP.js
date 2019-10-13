@@ -15,7 +15,7 @@ const library = require('./data');
 app.use(express.json());
 // READ LIST
 app.get('/books', (req, res) => {
-  res.json({
+  res.status(200).json({
     message: 'Books List',
     data: library,
   });
@@ -23,14 +23,13 @@ app.get('/books', (req, res) => {
 // READ DETAIL
 app.get('/books/:id', (req, res) => {
   const i = req.params.id - 1;
-  res.json({
+  res.status(200).json({
     message: `Book with ID${req.params.id} Info`,
     data: library[i],
   });
 });
 // CREATE
 app.post('/books', (req, res) => {
-  console.log(req.body);
   const { title, author, year } = req.body;
   const book = {
     id: library.length + 1,
