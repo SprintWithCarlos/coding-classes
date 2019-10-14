@@ -30,7 +30,8 @@ const signUp = async (req, res) => {
   user = await new User({ name, email, password: hashPassword });
   await user.save();
   const jwtToken = user.generateJWT();
-  res
+  console.log(user.generateJWT());
+  return res
     .status(201)
     .header('Authorization', jwtToken)
     .send({
@@ -55,7 +56,9 @@ const login = async (req, res) => {
       message: 'Wrong email or password',
     });
   }
+
   const jwtToken = user.generateJWT();
+  console.log(jwtToken);
   return res
     .status(200)
     .header('Authorization', jwtToken)

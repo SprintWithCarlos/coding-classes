@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /* eslint-disable no-underscore-dangle */
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
@@ -23,7 +22,12 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+userSchema.methods.generateJWT = function () {
+  return jwt.sign(
+    { _id: this._id, name: this.name, isAdmin: this.isAdmin },
+    process.env.SECRET_JWT,
+  );
+};
 
-userSchema.methods.generateJWT = () => jwt.sign({ _id: this._id, name: this.name, isAdmin: this.isAdmin }, process.env.SECRET);
 const User = mongoose.model('user', userSchema);
 module.exports = User;

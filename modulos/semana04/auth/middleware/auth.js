@@ -8,7 +8,7 @@ const auth = (req, res, next) => {
     });
   }
   try {
-    const payload = jwt.verify(jwtToken, process.env.SECRET);
+    const payload = jwt.verify(jwtToken, process.env.SECRET_JWT);
     req.user = payload;
     return next();
   } catch (error) {
