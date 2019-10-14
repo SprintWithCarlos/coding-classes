@@ -108,5 +108,16 @@
     "bio": "Hardcore writer. Typical communicator. Friend of animals everywhere. Avid bacon fanatic. Organizer. Award-winning alcohol ninja.",
     "password": "Pérez86=&",
     "email": "david_pérez@example.com"
+  },
+  {
+    "ID": 11,
+    "firstName": "David",
+    "lastName": "Pérez",
+    "username": "dperez",
+    "avatar": "https://uinames.com/api/photos/male/12.jpg",
+    "role": "Tech",
+    "bio": "Hardcore writer. Typical communicator. Friend of animals everywhere. Avid bacon fanatic. Organizer. Award-winning alcohol ninja.",
+    "password": "Pérez86=&",
+    "email": "david_pérez@example.com"
   }
 ]

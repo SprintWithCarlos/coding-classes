@@ -9,5 +9,6 @@ router.get("/contact", controller.getContact);
 router.get("/about", controller.getAbout);
 router.get("/users/:id", controller.getDetailAbout);
 router.get("/categorias", controller.getCategorias);
-
+router.get("/libros", controller.getLibros);
+router.get("/api/posts", controller.getListAPI);
 module.exports = router;

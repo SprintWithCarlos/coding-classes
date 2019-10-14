@@ -1,6 +1,7 @@
 // Data Import
 const posts = require("../data/posts.json");
 const users = require("../data/users.json");
+const libros = require("../data/libros.json");
 const post = posts[1];
 exports.getList = (req, res) => {
   res.render("home", { posts });
@@ -29,4 +30,8 @@ exports.getListAPI = (req, res) => {
 exports.getDetailAbout = (req, res) => {
   const { id } = req.params;
   res.render("aboutdetail", { user: users[id - 1] });
+};
+
+exports.getLibros = (req, res) => {
+  res.render("libros", { libros });
 };
