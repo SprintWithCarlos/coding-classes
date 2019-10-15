@@ -1,0 +1,308 @@
+{
+	"id": "141f6246-a531-4c89-aa22-55bc10300a58",
+	"name": "REST API SQL",
+	"allTests": [],
+	"timestamp": "2019-10-13T10:52:35.020Z",
+	"collection_id": "9e2a3375-b6f4-4447-92b3-856034e82669",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "47d04af5-fb7f-444c-b183-5a34c57ff929",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "9e2a3375-b6f4-4447-92b3-856034e82669",
+		"name": "REST API SQL",
+		"order": [
+			"471d3879-ed45-446a-8513-4520aab086f9",
+			"6a21438a-27f2-4d51-8265-fbea14878777",
+			"ea236c0e-1c59-4ce7-800d-fb050aa2c849",
+			"5dcfffb5-e4ee-4611-80ae-f53d17fa2233",
+			"ffd5f2fd-7516-43f9-9c67-2fe7cf68ae5c"
+		],
+		"folders_order": [],
+		"isFavorite": true
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "CREATE",
+			"id": "ea236c0e-1c59-4ce7-800d-fb050aa2c849",
+			"url": "http://localhost:3000/books/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"71"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			],
+			"time": "71",
+			"totalRequestTime": "71",
+			"iterationResults": {}
+		},
+		{
+			"name": "READ LIST",
+			"id": "471d3879-ed45-446a-8513-4520aab086f9",
+			"url": "http://localhost:3000/books",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": "8",
+			"iterationResults": {}
+		},
+		{
+			"name": "READ DETAIL",
+			"id": "6a21438a-27f2-4d51-8265-fbea14878777",
+			"url": "http://localhost:3000/books/8",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"14"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "14",
+			"totalRequestTime": "14",
+			"iterationResults": {}
+		},
+		{
+			"name": "UPDATE",
+			"id": "5dcfffb5-e4ee-4611-80ae-f53d17fa2233",
+			"url": "http://localhost:3000/books/8",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"13"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "13",
+			"totalRequestTime": "13",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE",
+			"id": "ffd5f2fd-7516-43f9-9c67-2fe7cf68ae5c",
+			"url": "http://localhost:3000/books/8",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": "7",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 5,
+	"totalFail": 0,
+	"totalTime": 113,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "CREATE",
+			"id": "ea236c0e-1c59-4ce7-800d-fb050aa2c849",
+			"url": "http://localhost:3000/books/",
+			"time": "2019-10-13T10:52:35.020Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "READ LIST",
+			"id": "471d3879-ed45-446a-8513-4520aab086f9",
+			"url": "http://localhost:3000/books",
+			"time": "2019-10-13T10:52:35.020Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "READ DETAIL",
+			"id": "6a21438a-27f2-4d51-8265-fbea14878777",
+			"url": "http://localhost:3000/books/8",
+			"time": "2019-10-13T10:52:35.020Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "UPDATE",
+			"id": "5dcfffb5-e4ee-4611-80ae-f53d17fa2233",
+			"url": "http://localhost:3000/books/8",
+			"time": "2019-10-13T10:52:35.020Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE",
+			"id": "ffd5f2fd-7516-43f9-9c67-2fe7cf68ae5c",
+			"url": "http://localhost:3000/books/8",
+			"time": "2019-10-13T10:52:35.020Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

@@ -13,7 +13,7 @@ app.set('views', 'views');
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
-
+  
 // Routes
 app.use(routes);
 
