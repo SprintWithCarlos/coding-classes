@@ -6,10 +6,10 @@
 ## Tercera Semana
 ![base](/modulos/img/swc-fullstack-03.png)
 ### Primera clase
-- RESTful API: Conceptos generales, swagger
+- RESTful API: Conceptos generales, Postman
 ### Segunda clase
 - Auth/Archivos
 ### Tercera clase
-- Testing: API Swagger
+- Testing: API Postman
 
 **Autor: Carlos Marchena @ 2019**

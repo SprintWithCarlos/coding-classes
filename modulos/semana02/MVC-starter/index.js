@@ -13,9 +13,24 @@ app.set('views', 'views');
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
-  
+
 // Routes
 app.use(routes);
+// Error Handling
+app.use((req, res, next) => {
+  const error = new Error('Not found');
+  error.status = 404;
+  next(error);
+});
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.json({
+    error: {
+      message: error.message,
+    },
+  });
+  next();
+});
 
 // Server
 app.listen(3000, () => {

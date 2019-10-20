@@ -6,7 +6,7 @@
     c. UPDATE [X]
     d. DELETE
 */
-const library = require('./data');
+const library = require('../semana04/data');
 
 // READ LIST
 const readList = (data) => console.log(data);
