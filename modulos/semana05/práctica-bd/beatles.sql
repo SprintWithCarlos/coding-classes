@@ -4,7 +4,7 @@ USE SWC_clases;
 CREATE TABLE usuarios
 (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(50),
+    nombre VARCHAR( 50 ),
     apellido VARCHAR(50)
 );
 

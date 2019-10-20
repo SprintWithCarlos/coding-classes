@@ -6,42 +6,62 @@
     c. UPDATE [X]
     d. DELETE
 */
-const library = require('../semana04/data');
+// 1. Importación de los datos
+const datos = require('../semana03/data');
+// 2. Almacenamiento de los libros en variable "books"
+const { books } = datos;
 
-// READ LIST
-const readList = (data) => console.log(data);
-readList(library);
-// READ DETAIL
-const readDetail = (id, data) => {
+// 3. Creación de función "readList"
+const readList = (arr) => console.log(arr);
+
+// 4. Llamada de la función con el arreto 'book' como parámetro
+
+// a. readBooks
+// readList(books);
+
+// 5. Creación y llamada de la función readDetail
+const readDetail = (id, arr) => {
   const i = id - 1;
-  return console.log(data[i]);
+  return console.log(arr[i]);
 };
-readDetail(2, library);
-// CREATE
-const createBook = (title, author, year, data) => {
+
+// b. readDetails
+// readDetail(2, books);
+
+
+// 6. Creación y llamada de función createBook
+const createBook = (title, author, year, arr) => {
   const book = {
-    id: data.length + 1,
+    id: arr.length + 1,
     title,
     author,
     year,
   };
-  data.push(book);
+  arr.push(book);
+  return console.log(arr);
 };
-createBook('El Libro de la Jungla', 'Rudyar Kiplin', 'N/D', library);
-readList(library);
-// UPDATE
-const updateBook = (id, title, author, year, data) => {
-  const updatedBook = data.find((item) => item.id === id);
+// c. createBook
+// createBook('El Libro de la Jungla', 'Rudyar Kiplin', 'N/D', books);
+
+
+// 7. Creación y llamada de la función updateBook
+const updateBook = (id, title, author, year, arr) => {
+  const updatedBook = arr.find((item) => item.id === id);
   updatedBook.title = title;
   updatedBook.author = author;
   updatedBook.year = year;
+  return console.log(arr);
 };
-updateBook(4, 'El Libro de la Selva', 'Rudyaard Kipling', 1894, library);
-readList(library);
-// DELETE
-const deleteBook = (id, data) => {
-  const index = data.indexOf(id);
-  return data.splice(index, 1);
+
+// d. updateBook
+// updateBook(2, 'El Libro de la Selva', 'Rudyaard Kipling', 1894, books);
+
+// 8. Creación y llamada de la función deleteBook
+const deleteBook = (id, arr) => {
+  const index = arr.indexOf(id);
+  arr.splice(index, 1);
+  return console.log(arr);
 };
-deleteBook(4, library);
-readList(library);
+
+// e. deleteBook
+// deleteBook(1, books);

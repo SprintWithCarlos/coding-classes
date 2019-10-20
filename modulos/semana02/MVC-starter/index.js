@@ -18,17 +18,13 @@ app.use(morgan('dev'));
 app.use(routes);
 // Error Handling
 app.use((req, res, next) => {
-  const error = new Error('Not found');
+  const error = new Error('Página no encontrada');
   error.status = 404;
   next(error);
 });
 app.use((error, req, res, next) => {
   res.status(error.status || 500);
-  res.json({
-    error: {
-      message: error.message,
-    },
-  });
+  res.render('404', { error });
   next();
 });
 

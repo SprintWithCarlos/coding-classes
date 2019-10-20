@@ -95,19 +95,19 @@ app.delete('/books/:id', async (req, res) => {
   }
 });
 // Error Handling
-app.use((req, res, next) => {
+app.use(async (req, res, next) => {
   const error = new Error('Not found');
   error.status = 404;
   next(error);
 });
-app.use((error, req, res, next) => {
-  res.status(error.status || 500);
-  res.json({
+app.use(async (error, req, res, next) => {
+  const response = res.status(error.status || 500).json({
     error: {
       message: error.message,
     },
   });
   next();
+  return response;
 });
 app.listen(3000, () => {
   console.log('Escuchando en puerto 3000');
