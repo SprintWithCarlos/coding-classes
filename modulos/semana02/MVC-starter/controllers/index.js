@@ -85,3 +85,7 @@ exports.postLogin = (req, res) => {
     }
   });
 };
+
+exports.getLibros = (req, res) => {
+  res.render('libros', { libros });
+};

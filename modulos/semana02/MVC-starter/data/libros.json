@@ -1,0 +1,32 @@
+[
+  {
+    "ID": 0,
+    "book": "Elias",
+    "writter": "Maes",
+    "avatar": "https://uinames.com/api/photos/female/2.jpg",
+    "info": "Geography",
+    "bio": "Explorer. Introvert. Passionate food expert. Future teen idol. Lifelong internet trailblazer. Writer.",
+    "password": "Maes97@$",
+    "email": "eline.maes@example.com"
+  },
+  {
+    "ID": 1,
+    "book": "Baltimore",
+    "writter": "Maes",
+    "avatar": "https://uinames.com/api/photos/female/2.jpg",
+    "info": "Business",
+    "bio": "Explorer. Introvert. Passionate food expert. Future teen idol. Lifelong internet trailblazer. Writer.",
+    "password": "Maes97@$",
+    "email": "eline.maes@example.com"
+  },
+  {
+    "ID": 2,
+    "book": "leonard cohen",
+    "writter": "Maes",
+    "avatar": "https://uinames.com/api/photos/female/2.jpg",
+    "info": "science",
+    "bio": "Explorer. Introvert. Passionate food expert. Future teen idol. Lifelong internet trailblazer. Writer.",
+    "password": "Maes97@$",
+    "email": "eline.maes@example.com"
+  }
+]
