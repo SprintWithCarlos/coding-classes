@@ -1,6 +1,8 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
+const session = require('express-session');
 const routes = require('./routes/');
 
 const app = express();
@@ -13,6 +15,14 @@ app.set('views', 'views');
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: true }));
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false,
+  }),
+);
 
 // Routes
 app.use(routes);

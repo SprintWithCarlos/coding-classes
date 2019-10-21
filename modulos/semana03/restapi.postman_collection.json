@@ -381,10 +381,11 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
+							"     var jsonData = pm.response.json();",
+							"pm.environment.set(\"tokenAdmin\", jsonData.token);",
 							"});",
 							"",
-							" var jsonData = pm.response.json();",
-							"pm.environment.set(\"tokenAdmin\", jsonData.token);",
+							"",
 							""
 						],
 						"type": "text/javascript"
