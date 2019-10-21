@@ -12,11 +12,13 @@ const getUsersList = async (req, res) => {
   });
 };
 // Sign Up
+
 const signUp = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(422).json({ errors: errors.array() });
   }
+
   const { name, email, password } = req.body;
   let user = await User.findOne({ email });
   if (user) {
@@ -38,6 +40,7 @@ const signUp = async (req, res) => {
       _id: user._id,
       name: user.name,
       email: user.email,
+      token: jwtToken,
     });
 };
 // Login
@@ -68,6 +71,7 @@ const login = async (req, res) => {
         name: user.name,
         email: user.email,
         isAdmin: user.isAdmin,
+        token: jwtToken,
       },
     });
 };
