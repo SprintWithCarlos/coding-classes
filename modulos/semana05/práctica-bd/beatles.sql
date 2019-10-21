@@ -4,22 +4,19 @@ USE SWC_clases;
 CREATE TABLE usuarios
 (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(50),
+    nombre VARCHAR( 50 ),
     apellido VARCHAR(50)
 );
 
 INSERT INTO usuarios
     (nombre, apellido)
 VALUES( 'George', 'Harrison');
+
 INSERT INTO usuarios
     ( nombre, apellido)
-VALUES( 'Paul', 'McCartney');
-INSERT INTO usuarios
-    ( nombre, apellido)
-VALUES( 'Ringo', 'Starr');
-INSERT INTO usuarios
-    ( nombre, apellido)
-VALUES( 'John', 'Lennon');    
+VALUES( 'Paul', 'McCartney'),
+    ( 'Ringo', 'Starr'),
+    ( 'John', 'Lennon');    
 
 CREATE TABLE canciones
 (
@@ -28,9 +25,7 @@ CREATE TABLE canciones
     id_usuario INT,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
-INSERT INTO canciones (nombre, id_usuario) VALUES ('Yesterday', 2);
-INSERT INTO canciones (nombre, id_usuario) VALUES ('Let It Be', 2);
-INSERT INTO canciones (nombre, id_usuario) VALUES ('Come Together', 4);
+INSERT INTO canciones (nombre, id_usuario) VALUES ('Yesterday', 2), ('Let It Be', 2), ('Come Together', 4);
 -- SELECT canciones.nombre AS 'Nombre Canción', usuarios.nombre AS 'Nombre', usuarios.apellido AS 'Apellido' FROM canciones JOIN usuarios ON canciones.id_usuario = usuarios.id_usuario;
 -- SELECT c.nombre AS 'Nombre Canción', u.nombre AS 'Nombre', u.apellido AS 'Apellido' FROM canciones c JOIN usuarios u ON c.id_usuario = u.id_usuario;
 SELECT c.nombre AS 'Nombre Canción', u.nombre AS 'Nombre', u.apellido AS 'Apellido' FROM usuarios u  JOIN canciones c ON  u.id_usuario = c.id_usuario;

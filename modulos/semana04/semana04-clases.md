@@ -3,13 +3,13 @@
 
 # Sprint with Carlos
 
-## Tercera Semana
-![base](/modulos/img/swc-fullstack-03.png)
+## Cuarta Semana
+![base](/modulos/img/swc-fullstack-04.png)
 ### Primera clase
-- RESTful API: Conceptos generales, swagger
+- Node GraphQL
 ### Segunda clase
-- Auth/Archivos
+- GraphQL: Auth
 ### Tercera clase
-- Testing: API Swagger
+- Testing: GraphQL Playground
 
 **Autor: Carlos Marchena @ 2019**
