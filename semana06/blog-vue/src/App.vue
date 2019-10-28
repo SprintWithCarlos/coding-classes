@@ -1,32 +1,67 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/posts">Posts</router-link>
+      <div class="nav-bar">
+        <router-link to="/">Home</router-link> 
+        <router-link to="/about">About</router-link> 
+      </div>
     </div>
-    <transition name="router-anim">
-      <router-view/>
+    <main>
+      <transition name="router-anim">
+      <router-view :posts="posts" :users='users' />
     </transition>
+    </main>
+    <footer>
+    <p>© Carlos Marchena 2019</p>
+  </footer>
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body, figure, ul, li, h2, h3, h5, p{
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
 }
 
 #nav {
-  padding: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 10px;
+  background: #C4C4C4;
+}
+.nav-bar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  background: #C4C4C4;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  width: 69px;
+  height: 26px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
@@ -61,4 +96,42 @@
   }
   
 }
+main{
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100;
+}
 </style>
+<script>
+// const URI = 'https://jsonplaceholder.typicode.com/posts';
+const URI = 'https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/';
+export default {
+  data(){
+    return {
+      posts: [],
+      users: []
+      }
+  },
+  // props: ['posts', 'users'],
+  created(){
+    this.getPosts();
+    this.getUsers()
+  },
+  methods:{
+    async getPosts(){
+      const response = await fetch(URI+ "/posts");
+      const postsData = await response.json()
+      this.posts = postsData;
+    } ,
+    async getUsers(){
+      const response = await fetch(URI + "/users");
+      const usersData = await response.json()
+      this.users = usersData;
+    } 
+  }
+}
+</script>

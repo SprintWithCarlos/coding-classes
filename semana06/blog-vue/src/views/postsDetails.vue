@@ -1,30 +1,81 @@
 <template>
-  <div class="about">
-    <h1>This is the page for post with ID: {{post.id}}</h1>
-    <article>
-      <h1>{{post.title}}</h1>
-      <p>{{post.body}}</p>
-    </article>
+  <div id="postDetails">
+    <div class="article-content" v-for="post in posts" :key="post.id">
+      <div class="content" v-if="post.id == id">
+        <figure>
+          <img :src="post.postImg" alt="image pic" />
+        </figure>
+        <h1>{{post.title}}</h1>
+        <div class="user-info" v-for="user in users" :key="user.id">
+          <div class="user-content" v-if="post.userId === user.id">
+            <img class="avatar" :src="user.avatar" alt="user avatar">
+            <h2 class="user-name">{{user.name}}</h2>
+            <div class="social-icons">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/twitter.png" alt="twitter logo" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/instagram.jpg" alt="instagram logo" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+        <div class="post-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae id obcaecati repellendus, sit reiciendis voluptas consequuntur voluptatem minima fugit incidunt quod accusamus harum magni vitae quidem velit commodi praesentium possimus laudantium ipsa deleniti rem repellat! Deleniti illum iste, quibusdam magni eos vero asperiores architecto itaque aliquid natus accusamus. </p>
+        </div>
+      </div>
+    </div>
+    
   </div>
+  
 </template>
-<script>
- const URI = 'https://jsonplaceholder.typicode.com/posts/';
-export default {
-    props: ['id'],
-  data(){
-    return {
-      post: []
-      }
-  },
-  created(){
-    this.getPost()
-  },
-  methods:{
-    async getPost(){
-      const response = await fetch(URI + this.id);
-      const data = await response.json()
-      this.post = data;
-    } 
-  }
+<style>
+ #postDetails img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: -10px;
 }
+  #postDetails .user-info{
+  position: relative;
+}
+#postDetails .avatar{
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+ #postDetails .user-content{
+  display: flex;
+  flex-direction: column;
+}
+  #postDetails .social-icons img {
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+}
+  #postDetails .user-name{
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+#postDetails .post-content{
+  margin-top: 10px;
+  padding: 0 20px;
+}
+</style>
+<script>
+export default {
+  props: ["posts", "id", "users"]
+};
 </script>

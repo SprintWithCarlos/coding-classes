@@ -1,17 +1,19 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+
 import About from '../views/About.vue';
 import Posts from '../views/Posts.vue';
 import postsDetails from '../views/postsDetails.vue';
+import usersDetails from '../views/usersDetails.vue';
 
+const error404 = { template: ' <div>Not Found</div>' };
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home,
+    component: Posts,
   },
   {
     path: '/about',
@@ -19,16 +21,20 @@ const routes = [
     component: About,
   },
   {
-    path: '/posts/',
-
-    name: 'posts',
-    component: Posts,
-  },
-  {
     path: '/posts/:id',
     props: true,
     name: 'posts',
     component: postsDetails,
+  },
+  {
+    path: '/users/:id',
+    props: true,
+    name: 'users',
+    component: usersDetails,
+  },
+  {
+    path: '*',
+    component: error404,
   },
 ];
 
