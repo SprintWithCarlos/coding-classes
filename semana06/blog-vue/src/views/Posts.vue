@@ -1,43 +1,47 @@
 <template>
   <div class="about">
     <h1>Our Blog</h1>
-    <article v-for="post in posts" :key="post.id" class="card">
-      <figure>
-        <img :src="post.postImg" alt="post image" />
-      </figure>
-      <div class="card-text">
-        <h2>{{post.title}}</h2>
-        <p class="body">{{post.description}}</p>
-        <a :href="'/posts/' + post.id">Read More</a>
+    <section class="content">
+      <article v-for="post in posts" :key="post.id" class="card">
+        <figure>
+          <img :src="post.postImg" alt="post image" />
+        </figure>
+        <div class="card-text">
+          <h2>{{post.title}}</h2>
+          <p class="body">{{post.description}}</p>
+          <a :href="'/posts/' + post.id">Read More</a>
 
-        <div class="user-info" v-for="user in users" :key="user.id">
-          <div v-if="post.userId === user.id" class="user-content">
-            <div class="w30">
-             <a :href="'/users/' + user.id"> <img :src="user.thumbnail" alt="user avatar" class="thumbnail" /></a>
-            </div>
-            <div class="w70">
-              <p class="user-name">{{user.name}}</p>
-              <div class="social-icons">
-                <nav>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="../assets/twitter.png" alt="twitter logo" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="../assets/instagram.jpg" alt="instagram logo" />
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+          <div class="user-info" v-for="user in users" :key="user.id">
+            <div v-if="post.userId === user.id" class="user-content">
+              <div class="w30">
+                <a :href="'/users/' + user.id">
+                  <img :src="user.thumbnail" alt="user avatar" class="thumbnail" />
+                </a>
+              </div>
+              <div class="w70">
+                <p class="user-name">{{user.name}}</p>
+                <div class="social-icons">
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="../assets/twitter.png" alt="twitter logo" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="../assets/instagram.jpg" alt="instagram logo" />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </section>
   </div>
 </template>
 <style>
@@ -109,14 +113,17 @@ img {
   list-style-type: none;
   display: flex;
 }
-@media screen and (min-width: 321px){
-    .user-name {
-        font-size: 0.9rem;
-}
-img {
-  width: 8.25rem;
-
-}
+@media screen and (min-width: 321px) {
+  .user-name {
+    font-size: 0.9rem;
+  }
+  img {
+    width: 17.75rem;
+  }
+  .content{
+    max-width:503px;
+    margin: 0 auto;
+  }
 }
 </style>
 

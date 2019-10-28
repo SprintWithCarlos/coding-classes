@@ -1,7 +1,8 @@
 <template>
   <div id="users">
     <h1>Who we are?</h1>
-    <article v-for="user in users" :key="user.id" class="card">
+    <section class="content">
+      <article v-for="user in users" :key="user.id" class="card">
       <a :href="'/users/' + user.id">
         <figure>
           <img :src="user.avatar" alt="user avatar" />
@@ -13,6 +14,7 @@
         <small>{{user.email}}</small>
       </div>
     </article>
+    </section>
   </div>
 </template>
 <style>

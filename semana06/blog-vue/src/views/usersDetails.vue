@@ -1,5 +1,5 @@
 <template>
-  <div id="userDetails">
+  <div id="userDetails" class=content>
     <div class="user-info" v-for="user in users" :key="user.id">
       <div class="user-content" v-if="id == user.id">
         <img class="avatar" :src="user.avatar" alt="user avatar" />
