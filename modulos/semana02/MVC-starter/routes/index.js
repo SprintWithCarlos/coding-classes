@@ -4,7 +4,7 @@ const router = express.Router();
 const controller = require('../controllers/');
 
 router.get('/', controller.getList);
-router.get('/posts/:id', controller.getDetail);
+router.get('/posts/:name', controller.getDetail);
 router.get('/contact', controller.getContact);
 router.get('/about', controller.getAbout);
 router.get('/users/:id', controller.getDetailAbout);

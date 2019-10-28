@@ -5,11 +5,14 @@ const users = require("../data/users.json");
 
 const datos = require("../data/datos");
 
-const { usuarios, articulos, sesiones } = datos;
+const { usuarios, sesiones } = datos;
 exports.getList = (req, res) => {
   res.render("home", { posts });
 };
 exports.getDetail = (req, res) => {
+  console.log(req.params);
+  console.log(req.params.name);
+
   const { id } = req.params;
   res.render("details", { post: posts[id - 1] });
 };

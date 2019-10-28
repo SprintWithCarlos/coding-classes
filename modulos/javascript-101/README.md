@@ -30,7 +30,11 @@ Crear un array
 //vacío
 const miArreglo = [];
 // con elementos
-const lenguajes = ['JavaScript','Python', 'Java', 'C', 'Golang'];
+const lenguajes = [{
+    id: 1
+
+
+},'Python', 'Java', 'C', 'Golang'];
 console.log(lenguajes)
 // ['JavaScript','Python', 'Java', 'C', 'Golang']
 ```
