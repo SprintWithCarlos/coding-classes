@@ -3,7 +3,7 @@
 
 # Sprint with Carlos
 
-## Cuarta Semana
+## Sexta Semana
 ![base](/modulos/img/swc-fullstack-04.png)
 Para el modulo 6 "Frameworks de JavaScript", partiremos en los tres casos de un mismo prototipo.
 [Versión Mobile](https://www.figma.com/file/5GKrkEqTIAOIgYZZjpwUjT/blog?node-id=0%3A1)

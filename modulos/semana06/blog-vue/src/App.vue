@@ -83,7 +83,6 @@ footer {
     transform: translateX(-50px);
     opacity: 0;
   }
-  
 }
 @keyframes coming {
   from{
