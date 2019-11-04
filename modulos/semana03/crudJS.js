@@ -7,17 +7,17 @@
     d. DELETE
 */
 // 1. Importación de los datos
-const datos = require('../semana03/data');
+const datos = require("../semana03/data");
 // 2. Almacenamiento de los libros en variable "books"
 const { books } = datos;
 
 // 3. Creación de función "readList"
-const readList = (arr) => console.log(arr);
+const readList = arr => console.log(arr);
 
 // 4. Llamada de la función con el arreto 'book' como parámetro
 
 // a. readBooks
-// readList(books);
+//readList(books);
 
 // 5. Creación y llamada de la función readDetail
 const readDetail = (id, arr) => {
@@ -26,8 +26,7 @@ const readDetail = (id, arr) => {
 };
 
 // b. readDetails
-// readDetail(2, books);
-
+readDetail(3, books);
 
 // 6. Creación y llamada de función createBook
 const createBook = (title, author, year, arr) => {
@@ -35,7 +34,7 @@ const createBook = (title, author, year, arr) => {
     id: arr.length + 1,
     title,
     author,
-    year,
+    year
   };
   arr.push(book);
   return console.log(arr);
@@ -43,10 +42,9 @@ const createBook = (title, author, year, arr) => {
 // c. createBook
 // createBook('El Libro de la Jungla', 'Rudyar Kiplin', 'N/D', books);
 
-
 // 7. Creación y llamada de la función updateBook
 const updateBook = (id, title, author, year, arr) => {
-  const updatedBook = arr.find((item) => item.id === id);
+  const updatedBook = arr.find(item => item.id === id);
   updatedBook.title = title;
   updatedBook.author = author;
   updatedBook.year = year;
