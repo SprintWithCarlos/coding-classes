@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Title 1",
+    "excerpt": "Quia et suscipit suscipit recusandae consequuntur .",
+    "description": "Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto",
+    "postImg": "https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "title": "Title 2",
+    "excerpt": "Est rerum tempore vitae sequi sint nihil reprehenderit .",
+    "description": "Est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla",
+    "postImg": "https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "title": "Title 3",
+    "excerpt": "Et iusto sed quo iure voluptatem occaecati omnis .",
+    "description": "Et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut",
+    "postImg": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 4,
+    "userId": 4,
+    "title": "Title 4",
+    "excerpt": "Ullam et saepe reiciendis voluptatem adipisci sit.",
+    "description": "Ullam et saepe reiciendis voluptatem adipisci sit amet autem assumenda provident rerum culpa quis hic commodi nesciunt rem tenetur doloremque ipsam iure quis sunt voluptatem rerum illo velit",
+    "postImg": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 5,
+    "userId": 5,
+    "title": "Title 5",
+    "excerpt": "Repudiandae veniam quaerat sunt sed alias aut.",
+    "description": "Repudiandae veniam quaerat sunt sed alias aut fugiat sit autem sed est voluptatem omnis possimus esse voluptatibus quis est aut tenetur dolor neque",
+    "postImg": "https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 6,
+    "userId": 1,
+    "title": "Title 6",
+    "excerpt": "Ut aspernatur corporis harum nihil quis.",
+    "description": "Ut aspernatur corporis harum nihil quis provident sequi mollitia nobis aliquid molestiae perspiciatis et ea nemo ab reprehenderit accusantium quas voluptate dolores velit et doloremque molestiae",
+    "postImg": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 7,
+    "userId": 2,
+    "title": "Title 7",
+    "excerpt": "Dolore placeat quibusdam ea quo vitae magni quis enim.",
+    "description": "Dolore placeat quibusdam ea quo vitae magni quis enim qui quis quo nemo aut saepe quidem repellat excepturi ut quia sunt ut sequi eos ea sed quas",
+    "postImg": "https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 8,
+    "userId": 3,
+    "title": "Title 8",
+    "excerpt": "Dignissimos aperiam dolorem qui eum facilis quibusdam.",
+    "description": "Dignissimos aperiam dolorem qui eum facilis quibusdam animi sint suscipit qui sint possimus cum quaerat magni maiores excepturi ipsam ut commodi dolor voluptatum modi aut vitae",
+    "postImg": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 9,
+    "userId": 4,
+    "title": "Title 9",
+    "excerpt": "Consectetur animi nesciunt iure dolore enim quia.",
+    "description": "Consectetur animi nesciunt iure dolore enim quia ad veniam autem ut quam aut nobis et est aut quod aut provident voluptas autem voluptas",
+    "postImg": "https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "id": 10,
+    "userId": 5,
+    "title": "Title 10",
+    "excerpt": "Quo et expedita modi cum officia vel magni doloribus.",
+    "description": "Quo et expedita modi cum officia vel magni doloribus qui repudiandae vero nisi sit quos veniam quod sed accusamus veritatis error",
+    "postImg": "https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+  }
+]
