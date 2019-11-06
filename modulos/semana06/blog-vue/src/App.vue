@@ -124,8 +124,8 @@ export default {
   methods:{
     async getPosts(){
       const response = await fetch(URI+ "/posts");
-      const postsData = await response.json()
-      this.posts = postsData;
+      const data = await response.json()
+      this.posts = data;
     } ,
     async getUsers(){
       const response = await fetch(URI + "/users");
