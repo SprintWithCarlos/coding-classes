@@ -4,6 +4,7 @@
     <section class="content">
       <article v-for="post in posts" :key="post.id" class="card">
         <figure>
+  
           <img :src="post.postImg" alt="post image" />
         </figure>
         <div class="card-text">
