@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from "vue";
+import VueRouter from "vue-router";
 
 import About from '../views/About.vue';
 import Posts from '../views/Posts.vue';
@@ -8,31 +8,27 @@ import Login from '../views/Login.vue';
 import postsDetails from '../views/postsDetails.vue';
 import usersDetails from '../views/usersDetails.vue';
 
-const error404 = { template: ' <div>Not Found</div>' };
+const error404 = { template: " <div>Not Found</div>" };
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Posts,
+    path: "/",
+    name: "home",
+    component: Posts
   },
+
   {
-    path: '/about',
-    name: 'about',
-    component: About,
-  },
-  {
-    path: '/posts/:id',
+    path: "/posts/:id",
     props: true,
-    name: 'posts',
-    component: postsDetails,
+    name: "posts",
+    component: postsDetails
   },
   {
-    path: '/users/:id',
+    path: "/users/:id",
     props: true,
-    name: 'users',
-    component: usersDetails,
+    name: "users",
+    component: usersDetails
   },
   {
     path: '*',
@@ -51,9 +47,9 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;
