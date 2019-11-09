@@ -3,14 +3,14 @@
     <h1>Who we are?</h1>
     <section class="content">
       <article v-for="user in users" :key="user.id" class="card">
-      <a :href="'/users/' + user.id">
+      <a :href="'/users/' + user._id">
         <figure>
           <img :src="user.avatar" alt="user avatar" />
         </figure>
       </a>
 
       <div class="card-text">
-        <h3>{{user.name}}</h3>
+        <h3>{{user.firstName}} {{user.lastName}}</h3>
         <small>{{user.email}}</small>
       </div>
     </article>

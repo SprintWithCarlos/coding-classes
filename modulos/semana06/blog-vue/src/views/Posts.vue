@@ -2,7 +2,7 @@
   <div class="about">
     <h1>Our Blog</h1>
     <section class="content">
-      <article v-for="post in posts" :key="post.id" class="card">
+      <article v-for="post in posts" :key="post._id" class="card"> 
         <figure>
   
           <img :src="post.postImg" alt="post image" />
@@ -10,17 +10,17 @@
         <div class="card-text">
           <h2>{{post.title}}</h2>
           <p class="body">{{post.description}}</p>
-          <a :href="'/posts/' + post.id">Read More</a>
+          <a :href="'/posts/' + post._id">Read More</a>
 
-          <div class="user-info" v-for="user in users" :key="user.id">
-            <div v-if="post.userId === user.id" class="user-content">
+          <div class="user-info">
+            <div  class="user-content">
               <div class="w30">
-                <a :href="'/users/' + user.id">
-                  <img :src="user.thumbnail" alt="user avatar" class="thumbnail" />
+                <a :href="'/users/' + post.author._id">
+                  <img :src="post.author.thumbnail" alt="user avatar" class="thumbnail" />
                 </a>
               </div>
               <div class="w70">
-                <p class="user-name">{{user.name}}</p>
+               <p class="user-name">{{post.author.firstName}} {{post.author.lastName}}</p>
                 <div class="social-icons">
                   <nav>
                     <ul>

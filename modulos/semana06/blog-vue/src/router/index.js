@@ -3,6 +3,8 @@ import VueRouter from 'vue-router';
 
 import About from '../views/About.vue';
 import Posts from '../views/Posts.vue';
+import Signup from '../views/Signup.vue';
+import Login from '../views/Login.vue';
 import postsDetails from '../views/postsDetails.vue';
 import usersDetails from '../views/usersDetails.vue';
 
@@ -35,6 +37,16 @@ const routes = [
   {
     path: '*',
     component: error404,
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup,
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login,
   },
 ];
 

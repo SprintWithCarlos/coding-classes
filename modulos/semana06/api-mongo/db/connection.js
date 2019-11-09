@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 const URI = process.env.MONGOATLAS
   ? process.env.MONGOATLAS
-  : 'mongodb://localhost/swc-rest-api';
+  : 'mongodb://localhost/swc-rest-api'; 
 
+// const URI = 'mongodb://localhost/realtest'
 mongoose.connect(URI, {
   useNewUrlParser: true,
   useCreateIndex: true,

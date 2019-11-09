@@ -1,15 +1,17 @@
 const Post = require('../models/Post');
+const User = require('../models/User');
 
 exports.getPosts = (async (req, res) => {
-  const posts = await Post.find();
+  const posts = await Post.find().populate('author')
   res.status(200).json({
     message: 'Post List',
+    count: posts.length,
     data: posts,
   });
 });
 exports.getPost = async (req, res) => {
   const { id } = req.params;
-  const post = await Post.findOne({ id });
+  const post = await Post.findOne({ id }).populate('author', '-password');
   if (!post) {
     return res.status(404).json({
       message: 'No Post with that ID',
@@ -23,17 +25,22 @@ exports.getPost = async (req, res) => {
 
 exports.createPost = async (req, res) => {
   const {
-    id, userId, title, excerpt, description, postImg,
+     title, excerpt, description, postImg, author
   } = req.body;
+
   const post = new Post({
-    id,
-    userId,
     title,
     excerpt,
     description,
     postImg,
+    author
   });
-  const result = await post.save();
+  const foundUser = await User.findOne({_id: author})
+
+  foundUser.posts.push(post._id)
+  await foundUser.save()
+  const result = await post.save(foundUser);
+
   res.status(201).json({
     message: 'Post Created',
     data: result,

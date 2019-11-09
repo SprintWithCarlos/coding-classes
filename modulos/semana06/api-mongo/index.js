@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
+
 
 const app = express();
 const authRoutes = require('./routes/authRoutes');
@@ -15,6 +17,7 @@ app.set('port', process.env.PORT || 5000);
 // Middlewares
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cors())
 // Model
 
 app.use('/api', authRoutes);

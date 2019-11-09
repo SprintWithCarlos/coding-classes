@@ -1,9 +1,9 @@
 <template>
   <div id="userDetails" class=content>
-    <div class="user-info" v-for="user in users" :key="user.id">
-      <div class="user-content" v-if="id == user.id">
+    <div class="user-info" v-for="user in users" :key="user._id">
+      <div class="user-content" v-if="id == user._id">
         <img class="avatar" :src="user.avatar" alt="user avatar" />
-        <h2 class="user-name">{{user.name}}</h2>
+        <h2 class="user-name">{{user.firstName}} {{user.lastName}}</h2>
         <div class="social-icons">
           <nav>
             <ul>
