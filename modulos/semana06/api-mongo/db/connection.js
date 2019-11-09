@@ -1,21 +1,22 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const URI = process.env.MONGOATLAS
+/*const URI = process.env.MONGOATLAS
   ? process.env.MONGOATLAS
-  : 'mongodb://localhost/swc-rest-api';
+  : 'mongodb://localhost/swc-rest-api';*/
+
+const URI = "mongodb://localhost/swc-rest-api";
 
 mongoose.connect(URI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
+  useFindAndModify: false
 });
 
 const dbConnection = mongoose.connection;
 
-dbConnection.once('open', () => {
-  console.log('Database is connected');
+dbConnection.once("open", () => {
+  console.log("Database is connected");
 });
-
 
 module.exports = dbConnection;
