@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 
-const URI = process.env.MONGOATLAS
-  ? process.env.MONGOATLAS
-  : 'mongodb://localhost/swc-rest-api'; 
+const URI = "mongodb+srv://dbUser:gm1929hw@mflix-9ady0.mongodb.net/sample_mflix?retryWrites=true&w=majority"
 
-// const URI = 'mongodb://localhost/prueba'
 mongoose.connect(URI, {
     useNewUrlParser: true,
     useCreateIndex: true,

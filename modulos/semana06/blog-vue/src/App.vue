@@ -31,8 +31,8 @@ main{
 </style>
 <script>
 // const URI = 'https://jsonplaceholder.typicode.com/posts';
-// const URI = 'https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/';
-const URI = "http://localhost:3000/api"
+const URI = 'https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/';
+//const URI = "http://localhost:3000/api"
 import Nav from './components/Nav.vue';
 import Footer from './components/Footer.vue';
 export default {
@@ -52,32 +52,32 @@ export default {
   created(){
     this.getPosts();
     this.getUsers();
-    this.getData();
+    // this.getData();
   },
   methods:{
-    // async getPosts(){
-    //   const response = await fetch(URI+ "/posts");
-    //   const postsData = await response.json()
-    //   this.posts = postsData.data;
-    // } 
+    async getPosts(){
+      const response = await fetch(URI+ "/posts");
+      const postsData = await response.json()
+      this.posts = postsData;
+    }, 
   
     // getPosts(){
  
     //   fetch('https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/posts').then(response => response.json()).then(result => this.posts =result )},
-    getPosts(){
-      fetch('http://localhost:3000/api/posts').then(response => response.json()).then(result => this.posts = result.data )},
+    // getPosts(){
+    //   fetch('http://localhost:3000/api/posts').then(response => response.json()).then(result => this.posts = result.data )},
 
     async getUsers(){
       const response = await fetch(URI + "/users");
       const usersData = await response.json()
-      this.users = usersData.data;
+      this.users = usersData;
     }, 
-    getData(){
+    // getData(){
  
-      fetch('https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/posts').then(response => response.json()).then((result) => this.datos =result )
+    //   fetch('https://724ec9be-b4e7-4af6-956a-cdf5db978116.mock.pstmn.io/posts').then(response => response.json()).then((result) => this.datos =result )
   
 
-    }
+    // }
 
   }
 }
