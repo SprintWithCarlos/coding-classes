@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-function App() {
+function Card({data}) {
+  const { poster, title, year, plot } = data;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <p>data</p>
+      <h2>{title}</h2>
+        <img src={poster} alt={title}/>
+        <p>{plot}</p>
+      <p>{year}</p>
+    </>
+  )
 }
 
-export default App;
+export default class Movie extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      movies: []
+    }
+  }
+  async getMovies(){
+    const response = await fetch('http://localhost:5000/api/movies')
+    const result = await response.json()
+    return result.data;
+  }
+  async componentDidMount(){
+    const movies = await this.getMovies()
+    this.setState({
+      movies
+    })
+    console.log(this.state.movies)
+  }
+  render() {
+    return(
+      this.state.movies.map(movie => {
+        return (<Card data={movie} />)
+      })
+    )
+    
+  }
+}

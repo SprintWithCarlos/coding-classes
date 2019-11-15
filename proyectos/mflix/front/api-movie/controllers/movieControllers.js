@@ -3,7 +3,7 @@ const Movie = require('../models/Movie');
 
 exports.getMovies = (async (req, res) => {
   try {
-    const movies = await Movie.find().limit(10)
+    const movies = await Movie.find().limit(10).sort({ createdAt: 'desc'})
     res.status(200).json({
       message: 'Movie List',
       count: movies.length,
@@ -16,7 +16,7 @@ exports.getMovies = (async (req, res) => {
 exports.getMovie = async (req, res) => {
   try {
     const { id } = req.params;
-    const movie = await Movie.findOne({ id });
+    const movie = await Movie.findOne({ _id: id });
     if (!movie) {
       return res.status(404).json({
         message: 'No Movie with that ID',
@@ -34,21 +34,19 @@ exports.getMovie = async (req, res) => {
 exports.createMovie = async (req, res) => {
   try {
     const {
-      title, excerpt, description, movieImg, author
-    } = req.body;
+      title,  
+      plot,
+      poster,
+      year    } = req.body;
 
     const movie = new Movie({
       title,
-      excerpt,
-      description,
-      movieImg,
-      author
+      plot,
+      poster,
+      year
     });
-    const foundUser = await User.findOne({ _id: author })
-
-    foundUser.movies.push(movie._id)
-    await foundUser.save()
-    const result = await movie.save(foundUser);
+    
+    const result = await movie.save();
 
     res.status(201).json({
       message: 'Movie Created',
@@ -63,17 +61,18 @@ exports.updateMovie = async (req, res) => {
   try {
     const { id } = req.params;
     const {
-      userId, title, excerpt, description, movieImg,
-    } = req.body;
+      title,
+      plot,
+      poster,
+      year    } = req.body;
     const updatedMovie = await Movie.findOneAndUpdate(
-      { id },
+      { _id: id },
       {
         id,
-        userId,
         title,
-        excerpt,
-        description,
-        movieImg,
+        plot,
+        poster,
+        year
       },
       {
         new: true,
@@ -96,7 +95,7 @@ exports.updateMovie = async (req, res) => {
 // DELETE
 exports.deleteMovie = async (req, res) => {
   const { id } = req.params;
-  await Movie.findOneAndDelete({ id });
+  await Movie.findOneAndDelete({ _id: id });
   res.status(204).json({
     message: `Movie with ID ${id} deleted`,
   });
