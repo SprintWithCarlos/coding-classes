@@ -1,37 +1,36 @@
 [
   {
-    "id": 1,
     "name": "Emilio Calvo",
     "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/23.jpg",
-    "email": "emilio.calvo@example.com"
+    "email": "emilio.calvo@example.com", "password": 123
   },
   {
-    "id": 2,
     "name": "Frank Mendoza",
     "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/10.jpg",
-    "email": "frank.mendoza@example.com"
+    "email": "frank.mendoza@example.com",
+    "password": 123
   },
   {
-    "id": 3,
     "name": "Tracy Mitchelle",
     "avatar": "https://randomuser.me/api/portraits/women/0.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/0.jpg",
-    "email": "tracy.mitchelle@example.com"
+    "email": "tracy.mitchelle@example.com",
+    "password": 123
   },
   {
-    "id": 4,
     "name": "Jane Lee",
     "avatar": "https://randomuser.me/api/portraits/women/59.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg",
-    "email": "jane.lee@example.com"
+    "email": "jane.lee@example.com",
+    "password": 123
   },
   {
-    "id": 5,
     "name": "Elisa Lopez",
     "avatar": "https://randomuser.me/api/portraits/women/58.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/58.jpg",
-    "email": "elisa.lopez@example.com"
+    "email": "elisa.lopez@example.com",
+    "password": 123
   }
 ]

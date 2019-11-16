@@ -1,16 +1,16 @@
 <template>
   <div id="postDetails">
-    <div class="article-content" v-for="post in posts" :key="post.id">
-      <div v-if="post.id == id">
+    <div class="article-content" v-for="post in posts" :key="post._id">
+      <div v-if="post._id == id">
         <figure>
           <img :src="post.postImg" alt="image pic" />
         </figure>
         <section class="content">
           <h1>{{post.title}}</h1>
-          <div class="user-info" v-for="user in users" :key="user.id">
-            <div class="user-content" v-if="post.userId === user.id">
-              <img class="avatar" :src="user.avatar" alt="user avatar" />
-              <h2 class="user-name">{{user.name}}</h2>
+          <div class="user-info" >
+            <div class="user-content" >
+              <img class="avatar" :src="post.author.avatar" alt="user avatar" />
+              <h2 class="user-name">{{post.author.firstName}} {{post.author.lastName}}</h2>
               <div class="social-icons">
                 <nav>
                   <ul>

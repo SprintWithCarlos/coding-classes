@@ -1,0 +1,39 @@
+#postDetails img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: -10px;
+}
+#postDetails .user-info {
+  position: relative;
+}
+#postDetails .avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+#postDetails .user-content {
+  display: flex;
+  flex-direction: column;
+}
+#postDetails .social-icons img {
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+}
+#postDetails .user-name {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+#postDetails .post-content {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+@media screen and(min-width:321px) {
+  #postDetails img {
+    height: 315px;
+  }
+}

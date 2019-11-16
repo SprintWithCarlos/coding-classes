@@ -1,9 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Posts from "../views/Posts.vue";
-import postsDetails from "../views/postsDetails.vue";
-import usersDetails from "../views/usersDetails.vue";
+import About from '../views/About.vue';
+import Posts from '../views/Posts.vue';
+import Signup from '../views/Signup.vue';
+import Login from '../views/Login.vue';
+import postsDetails from '../views/postsDetails.vue';
+import usersDetails from '../views/usersDetails.vue';
 
 const error404 = { template: " <div>Not Found</div>" };
 Vue.use(VueRouter);
@@ -28,9 +31,19 @@ const routes = [
     component: usersDetails
   },
   {
-    path: "*",
-    component: error404
-  }
+    path: '*',
+    component: error404,
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup,
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login,
+  },
 ];
 
 const router = new VueRouter({

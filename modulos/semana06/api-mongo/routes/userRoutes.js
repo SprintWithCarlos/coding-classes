@@ -13,11 +13,12 @@ const router = Router();
 router
   .route('/users')
   .get(getUsers)
-  .post(isLoggedin, createUser);
+  // .post(isLoggedin, createUser);
+  .post(createUser);
 
 router
   .route('/users/:id')
   .get(getUser)
-  .put(isLoggedin, updateUser)
-  .delete(isLoggedin, deleteUser);
+  .put( updateUser)
+  .delete( deleteUser);
 module.exports = router;
