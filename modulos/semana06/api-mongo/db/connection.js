@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 const URI = "mongodb://localhost/swc-rest-api";
 
-// const URI = 'mongodb://localhost/realtest'
+// const URI = 'mongodb://localhost/prueba'
 mongoose.connect(URI, {
   useNewUrlParser: true,
   useCreateIndex: true,

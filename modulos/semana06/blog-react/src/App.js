@@ -29,12 +29,13 @@ export default class App extends Component {
   }
 
   async componentDidMount() {
+    const posts =await this.getData("/posts")
+    console.log("resultados",
+    posts)
     this.setState({ isLoading: true })
     try {
       const posts = await this.getData('/posts');
-      console.log(posts)
       const users = await this.getData('/users');
-      console.log(users)
       this.setState({
         isLoading: false,
         users,
