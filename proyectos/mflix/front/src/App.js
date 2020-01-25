@@ -6,8 +6,8 @@ function Card({data}) {
     <>
       <p>data</p>
       <h2>{title}</h2>
-        <img src={poster} alt={title}/>
-        <p>{plot}</p>
+      <img src={poster} alt={title}/>
+      <p>{plot}</p>
       <p>{year}</p>
     </>
   )

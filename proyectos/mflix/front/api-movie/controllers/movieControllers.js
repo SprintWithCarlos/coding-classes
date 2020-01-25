@@ -2,8 +2,12 @@ const Movie = require('../models/Movie');
 
 
 exports.getMovies = (async (req, res) => {
+  const currentPage = req.query.page || 1
   try {
-    const movies = await Movie.find().limit(10).sort({ createdAt: 'desc'})
+    const perPage = 20;
+    const movies = await Movie.find()
+    .skip((currentPage -1) * perPage)
+    .limit(perPage)
     res.status(200).json({
       message: 'Movie List',
       count: movies.length,
