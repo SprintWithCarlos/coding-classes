@@ -86,5 +86,6 @@ Tareas
 
 ### Recursos 
 [Miller, Brad y Ranum, David, Resolución de problemas con algoritmos y estructuras de datos con Python - versión online en inglés](https://runestone.academy/runestone/books/published/pythonds/index.html)
+[Secuencia, Decisión y Repetición ](https://prezi.com/0i7cg2no2k_q/estructuras-de-decision-secuencia-y-repeticion-en-programacion/)
 
 @ Carlos Marchena - 2019. Todos los derechos reservados
